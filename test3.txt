@@ -1,1 +1,55 @@
-test3.txt
+package project1;
+
+public class project1 {
+
+	    public static void main(String[] args) {
+	        // Arithmetic Operations
+	        int num1 = 10;
+	        int num2 = 5;
+
+	        int addition = num1 + num2;
+	        int subtraction = num1 - num2;
+	        int multiplication = num1 * num2;
+	        int division = num1 / num2;
+	        int modulus = num1 % num2;
+
+	        System.out.println("Arithmetic Operations:");
+	        System.out.println("Addition: " + addition);
+	        System.out.println("Subtraction: " + subtraction);
+	        System.out.println("Multiplication: " + multiplication);
+	        System.out.println("Division: " + division);
+	        System.out.println("Modulus: " + modulus);
+
+	        // Logical Operations
+	        boolean a = true;
+	        boolean b = false;
+
+	        boolean andResult = a && b;
+	        boolean orResult = a || b;
+	        boolean notA = !a;
+	        boolean complexResult = (a || b) && !b;
+
+	        System.out.println("\nLogical Operations:");
+	        System.out.println("Logical AND (a && b): " + andResult);
+	        System.out.println("Logical OR (a || b): " + orResult);
+	        System.out.println("Logical NOT (!a): " + notA);
+	        System.out.println("Combined Logical Operation ((a || b) && !b): " + complexResult);
+
+	        // String Concatenation
+	        String str1 = "Hello";
+	        String str2 = "World";
+
+	        String result1 = str1 + " " + str2;
+	        String result2 = str1.concat(" ").concat(str2);
+	        StringBuilder sb = new StringBuilder();
+	        sb.append(str1).append(" ").append(str2);
+	        String result3 = sb.toString();
+	        String result4 = String.format("%s %s", str1, str2);
+
+	        System.out.println("\nString Concatenation:");
+	        System.out.println("Using + operator: " + result1);
+	        System.out.println("Using concat() method: " + result2);
+	        System.out.println("Using StringBuilder: " + result3);
+	        System.out.println("Using String.format(): " + result4);
+	    }
+	}
